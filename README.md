@@ -4,9 +4,9 @@ A small React/TypeScript chart library. It renders SVG directly with no charting
 
 ## About
 
-I built boringcharts because I was tired of finding chart libraries that were out of date, no longer maintained, or more than I needed. I wanted something lightweight and simple that I could customize and extend without much fuss.
+I built this cause I was annoyed with looking for libraries that were out of date/not maintained or just too much for what I wanted. I wanted something lightweight, simple and really not that complicated that I could customise and add onto further.
 
-This is still an early version. It is missing plenty of chart types and features, but what is here works and is fairly straightforward to use and build on.
+This is still missing a lot of chart types and other features but for now it works and it's fairly straightforward.
 
 ## Install
 
