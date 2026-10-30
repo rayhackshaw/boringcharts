@@ -2,6 +2,12 @@
 
 A small React/TypeScript chart library. It renders SVG directly with no charting runtime dependency. React 18 or newer is the only peer dependency. The configuration and rows are plain JSON values, so charts can be stored or generated outside React.
 
+## About
+
+I built boringcharts because I was tired of finding chart libraries that were out of date, no longer maintained, or more than I needed. I wanted something lightweight and simple that I could customize and extend without much fuss.
+
+This is still an early version. It is missing plenty of chart types and features, but what is here works and is fairly straightforward to use and build on.
+
 ## Install
 
 The package is currently local. Build it from this repository, then install it into a React project (replace the placeholder with this repository's path):
