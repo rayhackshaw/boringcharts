@@ -102,6 +102,20 @@ Open the local URL printed by Vite (normally `http://127.0.0.1:5173/`). For a st
 
 The demo uses clean routes such as `/start`, `/editing`, `/tokens`, and `/charts/line`. Vite handles these routes during local development. When hosting `demo-dist/` on a static server, configure unknown page requests to serve `index.html` so direct links and refreshes work.
 
+## Cloudflare Workers
+
+The gallery is live at [boringcharts.ray-908.workers.dev](https://boringcharts.ray-908.workers.dev). It is deployed as a static asset Worker. The library package itself remains separate; `wrangler.jsonc` points to the Vite output in `demo-dist/` and serves `index.html` for direct SPA routes.
+
+```sh
+npm ci
+npm run typecheck:demo
+npm run preview:cloudflare
+# When ready to publish:
+npm run deploy:cloudflare
+```
+
+Wrangler needs to be logged in to your Cloudflare account (`npx wrangler login`) before deployment. `demo-dist/` is generated during the command and is ignored by Git.
+
 The output is ESM with TypeScript declarations in `dist/`. SVG scales with its `viewBox`; set CSS `max-width: 100%; height: auto` for a responsive chart.
 
 ## npm publishing
